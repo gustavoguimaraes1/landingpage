@@ -21,7 +21,7 @@ export default function Marquee() {
   ];
 
   return (
-    <div className="overflow-hidden mb-13">
+    <div className="overflow-hidden mb-13 max-w-fit">
       <div className="flex w-max animate-marquee">
         {[0, 1, 2].map((copy) => (
           <div key={copy} className="flex shrink-0 gap-4 pr-3">
