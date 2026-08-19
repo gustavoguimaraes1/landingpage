@@ -1,1 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Sora:wght@100..800&display=swap');
 @import 'tailwindcss';
+
+
+@theme {
+  /* Cores principais */
+  --color-primary: #001f3e;
+  --color-secondary: #97f406;
+  --color-background: #F3FCE980;
+  --color-accent: #1ba699;
+  --color-text: #001D35;
+
+  --color-light-accent: #D1EDEB;
+
+  --font-sora: "Sora", sans-serif;
+  --font-jetbrains: "JetBrains Mono", monospace;
+
+  --animate-marquee: marquee 12s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-33.333333%);
+    }
+  }
+}

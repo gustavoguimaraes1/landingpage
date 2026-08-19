@@ -20,10 +20,9 @@ export default function Button({
         flex
         items-center
         justify-center
+        gap-2
         font-text
         rounded-full
-        px-4
-        py-2
         transition-colors
         ${variants[variant]}
         ${className}
