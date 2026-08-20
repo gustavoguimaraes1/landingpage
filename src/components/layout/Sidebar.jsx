@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SidebarItem from "./SidebarItem";
+import SidebarItem from "../ui/SidebarItem";
 
 export default function Sidebar({ open, onClose }) {
   const [activeItem, setActiveItem] = useState("Início");

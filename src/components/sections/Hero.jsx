@@ -2,23 +2,18 @@ import Button from "../ui/Button";
 import Card from "../ui/Card";
 import Text from "../ui/Text";
 import Image from "../ui/Image";
+import Section from "../ui/Section";
 
 export default function Hero() {
   return (
-    <section className="w-full bg-background">
+    <Section id="inicio" background="bg-background">
       <div
         className="
           w-full
-          max-w-[1440px]
-          mx-auto
-          px-5
-          py-12
-          sm:px-6
-          sm:py-14
-          lg:h-[504px]
-          lg:px-10
-          lg:pt-24
-          lg:pb-[92px]
+          min-h-[calc(100vh-74px)]
+          flex
+          items-center
+
         "
       >
         <div
@@ -27,24 +22,25 @@ export default function Hero() {
             flex-col
             lg:flex-row
             items-center
-            gap-8
-            lg:gap-6
+            justify-between
             w-full
-            lg:h-[316px]
+            gap-10
+            lg:gap-16
           "
         >
           {/* Conteúdo */}
-          <div className="w-full lg:flex-1">
+          <div className="w-full lg:w-1/2">
             <Text
               as="h1"
               className="
                 text-3xl
                 sm:text-4xl
+                md:text-5xl
                 lg:text-5xl
                 font-bold
                 leading-tight
-                mb-5
-                lg:mb-6
+                mb-4
+                lg:mb-5
               "
             >
               Não esperamos o futuro:
@@ -60,8 +56,8 @@ export default function Hero() {
                 lg:text-xl
                 leading-relaxed
                 max-w-[560px]
-                mb-5
-                lg:mb-6
+                mb-4
+                lg:mb-5
               "
             >
               Nascemos de uma ideia simples: inovação começa com educação.
@@ -72,7 +68,7 @@ export default function Hero() {
             <Card
               tag="Innovative Solutions"
               color="lightAccent"
-              className="mb-5 lg:mb-6"
+              className="mb-4 lg:mb-5"
             />
 
             <Button
@@ -107,14 +103,14 @@ export default function Hero() {
           </div>
 
           {/* Imagem */}
-          <div className="w-full lg:flex-1">
+          <div className="w-full lg:w-1/2">
             <Image
               src="exemplodeimg.png"
               alt="Exemplo"
               className="
                 w-full
                 h-auto
-                lg:h-[316px]
+                lg:h-[550px]
                 rounded-2xl
                 object-cover
               "
@@ -122,6 +118,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }
